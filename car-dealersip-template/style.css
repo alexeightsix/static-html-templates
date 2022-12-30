@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a:hover {
+  color: #800000;
+}
+
+nav {
+  transition: ease 0.2s;
+}
+
+@media screen and (max-width: 640px) {
+  .mobile-menu-hidden {
+    translate: -100%;
+    transition: ease 0.2s;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #contact-bar {
+    height: 80px;
+  }
+
+  #contact-bar div {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+}

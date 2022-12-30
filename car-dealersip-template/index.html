@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tailwind Car Dealership Static HTML Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="build.css" rel="stylesheet" />
+</head>
+
+<body class="bg-[#FAFAFA]">
+  <div id="contact-bar" class="bg-[#1A1A1A]">
+    <div class="container mx-auto flex h-16 items-center justify-around text-white sm:justify-end sm:gap-20 sm:pr-5">
+      <a class="inline-flex items-center justify-center gap-3 text-[20px] text-white" href="#">
+        <i class="fa-solid fa-location-dot text-[#B89340]"></i>
+        Visit Us
+      </a>
+      <a class="inline-flex items-center justify-center gap-3 text-[20px]" href="#">
+        <i class="fa-solid fa-phone-volume text-[#B89340]"></i>
+        Sales: +123-0-456-7890</a>
+    </div>
+  </div>
+
+  <div id="header" class="bg-black">
+    <div
+      class="container mx-auto flex min-h-full flex-col justify-between gap-5 p-5 sm:items-center sm:justify-center lg:flex-row lg:justify-between">
+      <div class="flex items-center justify-between sm:justify-between lg:justify-between">
+        <a class="w-[200px] sm:w-[275px]" href="#">
+          <img class="h-auto w-full" src="img/new-logo.png" alt="" />
+        </a>
+        <i id="mobile-btn" class="fa-solid fa-bars text-3xl text-white hover:cursor-pointer sm:hidden"></i>
+      </div>
+      <nav id="primary-navigation"
+        class="mobile-menu-hidden top-[150px] bg-black uppercase text-white max-sm:fixed max-sm:left-0 max-sm:z-10 max-sm:h-[100vh] max-sm:w-[100vw] max-sm:pl-5 max-sm:text-lg">
+        <ul class="flex flex-col gap-4 sm:flex-row">
+          <li class="group relative">
+            <a class="inline-flex gap-0 sm:gap-1" href=" #"><span>Inventory</span>
+              <img class="hidden h-5 w-5" src="img/select-arrow.svg" alt="" /></a>
+            <ul
+              class="sm-pt-5 mt-2 flex w-[250px] flex-col gap-4 pl-2 pt-0 sm:absolute sm:hidden sm:bg-white sm:pl-2 sm:pb-2 sm:pt-5 sm:text-black sm:group-hover:flex">
+              <li><a href="#">Inventory</a></li>
+              <li><a href="#">Inventory</a></li>
+              <li><a href="#">Inventory</a></li>
+              <li><a href="#">Inventory</a></li>
+              <li><a href="#">Inventory</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Sell Or Consult</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div id="hero" class="h-[663px] bg-hero bg-cover">
+    <div class="container mx-auto flex h-full w-full flex-col items-center justify-center gap-10">
+      <h1 class="text-2xl sm:text-4xl uppercase text-white text-center">Welcome To My Car Dealership</h1>
+      <a class="flex flex-col items-center justify-center gap-5 uppercase text-white" href="#">
+        View Inventory
+        <img class="" width="60" height="64" src="img/shield-white-hover.png" alt="" />
+      </a>
+    </div>
+  </div>
+  <div id="search" class="sm-bg-[url('img/search-banner.jpg')] h-full bg-search">
+    <div class="container mx-auto flex flex-col items-center justify-center gap-10 p-10 pt-[30px] text-white">
+      <h2 class="text-4xl font-bold">Find a Vehicle</h2>
+      <form class="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-4" method="POST" action="#">
+        <select
+          class="w-full appearance-none border border-gray-300 bg-[#333333] bg-[url('img/select-arrow.svg')] bg-[length:15px_15px] bg-[98%_12px] bg-no-repeat p-2.5 text-sm text-gray-300">
+          <option selected>New Cars (0)</option>
+        </select>
+        <select
+          class="w-full appearance-none border border-gray-300 bg-[#333333] bg-[url('img/select-arrow.svg')] bg-[length:15px_15px] bg-[98%_12px] bg-no-repeat p-2.5 text-sm text-gray-300">
+          <option selected>New Cars (0)</option>
+        </select>
+
+        <select
+          class="w-full appearance-none border border-gray-300 bg-[#333333] bg-[url('img/select-arrow.svg')] bg-[length:15px_15px] bg-[98%_12px] bg-no-repeat p-2.5 text-sm text-gray-300">
+          <option selected>New Cars (0)</option>
+        </select>
+
+        <select
+          class="w-full appearance-none border border-gray-300 bg-[#333333] bg-[url('img/select-arrow.svg')] bg-[length:15px_15px] bg-[98%_12px] bg-no-repeat p-2.5 text-sm text-gray-300">
+          <option selected>New Cars (0)</option>
+        </select>
+        <select
+          class="w-full appearance-none border border-gray-300 bg-[#333333] bg-[url('img/select-arrow.svg')] bg-[length:15px_15px] bg-[98%_12px] bg-no-repeat p-2.5 text-sm text-gray-300">
+          <option selected>New Cars (0)</option>
+        </select>
+        <select
+          class="w-full appearance-none border border-gray-300 bg-[#333333] bg-[url('img/select-arrow.svg')] bg-[length:15px_15px] bg-[98%_12px] bg-no-repeat p-2.5 text-sm text-gray-300">
+          <option selected>New Cars (0)</option>
+        </select>
+
+        <select
+          class="w-full appearance-none border border-gray-300 bg-[#333333] bg-[url('img/select-arrow.svg')] bg-[length:15px_15px] bg-[98%_12px] bg-no-repeat p-2.5 text-sm text-gray-300">
+          <option selected>New Cars (0)</option>
+        </select>
+
+        <div class="h-full w-full">
+          <button
+            class="flex w-full items-center justify-center gap-5 bg-[#800000] p-3 text-sm uppercase hover:bg-opacity-80">
+            Search
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="inventory" class="bg-black">
+    <div
+      class="grid grid-cols-1 items-center gap-10 overflow-hidden p-10 uppercase text-white sm:grid-cols-2 md:grid-cols-4">
+      <div class="relative flex justify-center">
+        <picture>
+          <img src="img/tile1.jpg" alt="" />
+        </picture>
+        <div class="absolute flex h-full w-full flex-col items-center justify-end gap-5 text-center">
+          <h3>Rolls Royce Inventory</h3>
+          <a class="inline-flex" href="#">
+            <i
+              class="mb-5 h-[70px] w-[70px] bg-[url('img/shield-white.png')] bg-no-repeat hover:bg-[url('img/shield-white-hover.png')]"></i></a>
+        </div>
+      </div>
+
+      <div class="relative flex justify-center">
+        <picture>
+          <img src="img/tile2.jpg" alt="" />
+        </picture>
+        <div class="absolute flex h-full w-full flex-col items-center justify-end gap-5 text-center">
+          <h3>All Inventory</h3>
+          <a class="inline-flex" href="#">
+            <i
+              class="mb-5 h-[70px] w-[70px] bg-[url('img/shield-white.png')] bg-no-repeat hover:bg-[url('img/shield-white-hover.png')]"></i></a>
+        </div>
+      </div>
+
+      <div class="relative flex justify-center">
+        <picture>
+          <img src="img/tile3.jpg" alt="" />
+        </picture>
+        <div class="absolute flex h-full w-full flex-col items-center justify-end gap-5 text-center">
+          <h3>Make an Inquiry</h3>
+
+          <a class="inline-flex" href="#">
+            <i
+              class="mb-5 h-[70px] w-[70px] bg-[url('img/shield-white.png')] bg-no-repeat hover:bg-[url('img/shield-white-hover.png')]"></i></a>
+        </div>
+      </div>
+
+      <div class="relative flex justify-center">
+        <picture>
+          <img src="img/tile4.jpg" alt="" />
+        </picture>
+        <div class="absolute flex h-full w-full flex-col items-center justify-end gap-5 text-center">
+          <h3>Services</h3>
+          <a class="inline-flex" href="#">
+            <i
+              class="mb-5 h-[70px] w-[70px] bg-[url('img/shield-white.png')] bg-no-repeat hover:bg-[url('img/shield-white-hover.png')]"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="featured-vehicles">
+    <div class="container relative mx-auto">
+      <div class="absolute top-[calc(50%+25px)] sm:left-[-20px] z-50 sm:h-[50px] sm:w-[50px] left-0">
+        <button class="btn-prev">
+          <i
+            class="inline-block h-[55px] w-[55px] scale-x-[-1] bg-no-repeat bg-contain bg-[url('img/remove-bg.jpg')]  hover:bg-[url('img/slide-next-removebg-hover___.png')]">
+          </i>
+        </button>
+      </div>
+      <div class="absolute top-[calc(50%+25px)] sm:right-[-20px] z-10 sm:h-[50px] sm:w-[50px] right-0">
+        <button class="btn-next">
+          <i
+            class="inline-block h-[55px] w-[55px] bg-no-repeat bg-contain bg-[url('img/remove-bg.jpg')]  hover:bg-[url('img/slide-next-removebg-hover___.png')]">
+          </i>
+        </button>
+      </div>
+      <div class="swiper">
+        <div class="flex justify-center pt-10 text-center pb-10">
+          <h2 class="text-3xl">Featured Vehicles</h2>
+        </div>
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide border-gray-50-500 flex w-full flex-col items-center justify-center gap-5 border bg-white p-10">
+            <picture>
+              <img src="img/featured-img1.jpg" alt="" />
+            </picture>
+            <div class="flex flex-col items-center justify-center gap-0">
+              <h4 class="text-xl font-bold">2020 Mercedes-Benz</h4>
+              <div class="text-lg font-semibold">Class G6...</div>
+            </div>
+            <div class="text-4xl">$299,000</div>
+          </div>
+          <div
+            class="swiper-slide border-gray-50-500 flex w-full flex-col items-center justify-center gap-5 border bg-white p-10">
+            <picture>
+              <img src="img/featured-img2.jpg" alt="" />
+            </picture>
+            <div class="flex flex-col items-center justify-center gap-0">
+              <h4 class="text-xl font-bold">2020 Mercedes-Benz</h4>
+              <div class="text-lg font-semibold">Class G6...</div>
+            </div>
+            <div class="text-4xl">$299,000</div>
+          </div>
+          <div
+            class="swiper-slide border-gray-50-500 flex w-full flex-col items-center justify-center gap-5 border bg-white p-10">
+            <picture>
+              <img src="img/featured-img3.jpg" alt="" />
+            </picture>
+            <div class="flex flex-col items-center justify-center gap-0">
+              <h4 class="text-xl font-bold">2020 Mercedes-Benz</h4>
+              <div class="text-lg font-semibold">Class G6...</div>
+            </div>
+            <div class="text-4xl">$299,000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="partner-logos" class="mt-10">
+    <div class="swiper container relative mx-auto">
+      <div class="swiper-wrapper w-full">
+        <div class="logo 50-500 border-1 swiper-slide h-full w-full border border-[#cccccc]">
+          <img alt="" class="h-auto w-full" src="img/partner-logo1.jpg" />
+        </div>
+        <div class="logo 50-500 border-1 swiper-slide h-full w-full border border-[#cccccc]">
+          <img alt="" class="h-auto w-full" src="img/partner-logo2.jpg" />
+        </div>
+        <div class="logo 50-500 border-1 swiper-slide h-full w-full border border-[#cccccc]">
+          <img alt="" class="h-auto w-full" src="img/partner-logo3.jpg" />
+        </div>
+        <div class="logo 50-500 border-1 swiper-slide h-full w-full border border-[#cccccc]">
+          <img alt="" class="h-auto w-full" src="img/partner-logo4.jpg" />
+        </div>
+        <div class="logo 50-500 border-1 swiper-slide h-full w-full border border-[#cccccc]">
+          <img alt="" class="h-auto w-full" src="img/partner-logo1.jpg" />
+        </div>
+        <div class="logo 50-500 border-1 swiper-slide h-full w-full border border-[#cccccc]">
+          <img alt="" class="h-auto w-full" src="img/partner-logo2.jpg" />
+        </div>
+        <div class="logo 50-500 border-1 swiper-slide h-full w-full border border-[#cccccc]">
+          <img alt="" class="h-auto w-full" src="img/partner-logo3.jpg" />
+        </div>
+        <div class="logo 50-500 border-1 swiper-slide h-full w-full border border-[#cccccc]">
+          <img alt="" class="h-auto w-full" src="img/partner-logo4.jpg" />
+        </div>
+      </div>
+
+      <button class="prev-logo absolute left-0 top-[calc(50%-14px)] z-10 h-[28px] w-[21px]">
+        <img class="h-auto w-full" width="21" height="28" src="img/prev-red.png" alt="prev" />
+      </button>
+
+      <button class="next-logo absolute right-0 top-[calc(50%-14px)] z-10 h-[28px] w-[21px]">
+        <img class="h-auto w-full" width="21" height="28" src="img/next-red.png" alt="next" />
+      </button>
+    </div>
+  </div>
+  <div class="mt-20" id="content">
+    <div class="grid-col-1 container mx-auto grid gap-10 p-5 sm:grid-cols-2">
+      <div class="mx-auto flex flex-col items-center justify-center gap-5">
+        <h1 class="text-4xl text-center">Welcome to Car Dealership HTML Template</h1>
+        <div>
+          <p class="mb-[15px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            sit amet magna sagittis, pharetra nibh non, dapibus nulla. Nam
+            pellentesque faucibus ultrices. Vestibulum egestas risus erat,
+            vitae elementum mi commodo vel. Praesent commodo quis sapien
+            facilisis maximus. Aliquam erat volutpat. Etiam quis mattis ex.
+            Phasellus facilisis hendrerit erat ultricies ornare. Suspendisse
+            mattis ex orci, vel consectetur mi imperdiet at. Curabitur nunc
+            velit, tincidunt a velit eu, cursus vulputate neque. Duis et velit
+            ex. Duis scelerisque nec ante ac dignissim. In sit amet erat eu
+            nunc fringilla semper vulputate cursus tellus. Morbi sodales
+            iaculis pharetra.
+          </p>
+
+          <p class="mb-[15px]">
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Aenean convallis ex ac orci efficitur, eu
+            pulvinar ante mollis. Donec non elit turpis. Suspendisse a lacus
+            ac tellus scelerisque luctus. Fusce molestie augue arcu, sit amet
+            rhoncus mauris placerat id. Curabitur sit amet hendrerit tortor.
+            Nam sem tortor, condimentum sed mollis non, dapibus quis leo.
+            Integer auctor, enim sit amet consequat dictum, nisi ex lobortis
+            lectus, sit amet iaculis enim eros et sem. Vestibulum dictum,
+            lorem iaculis lobortis iaculis, ante purus tempus magna, non
+            lacinia neque leo sed ligula. Quisque feugiat vehicula tellus, vel
+            mattis risus facilisis et.
+          </p>
+          <p class="mb-[15px]">
+            Pellentesque ut eros ex. Sed semper nunc vitae libero vehicula,
+            eget cursus tortor cursus. Quisque ex felis, gravida et neque nec,
+            ornare consequat turpis. Vivamus sagittis aliquam hendrerit.
+            Pellentesque placerat, tortor eu porttitor mollis, neque magna
+            eleifend sem, in efficitur est lorem non nisl. Aenean vel sem
+            aliquet, lobortis lectus sit amet, porta erat. Ut volutpat nisi
+            augue, et consectetur dolor consectetur porta. Cras porttitor mi
+            risus, sed dignissim sem facilisis a.
+          </p>
+          <div class="mt-10">
+            <a class="bg-[#ccc] bg-[#202020] py-2 px-3 text-lg font-bold uppercase text-white" href="#">More About
+              Us</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img class="h-auto w-full" src="img/welcome-img.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-[#202020] pt-8 pb-8 text-white">
+    <div class="container mx-auto grid grid-cols-2 gap-10 p-5 text-white sm:grid-cols-2 lg:grid-cols-3">
+      <div class="flex flex-col gap-5">
+        <h4 class="text-lg font-bold uppercase text-white">
+          Showroom Location
+        </h4>
+        <div class="flex items-center gap-2">
+          <div class="h-10 w-10 text-[25px] text-[#800000]">
+            <i class="fa-solid fa-location-pin"></i>
+          </div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="h-8 w-8 text-[25px] text-[#800000]">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div>info@example.com</div>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="h-8 w-8 text-[25px] text-[#800000]">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div>+123 456 0799</div>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold uppercase text-white">Quick Nav</h4>
+        <ul class="flex flex-col gap-2 pt-5 uppercase">
+          <li class="a"><a href="#">Inventory</a></li>
+          <li class="a"><a href="#">Brands</a></li>
+          <li class="a"><a href="#">Sell Or Consult</a></li>
+          <li class="a"><a href="#">Services</a></li>
+          <li class="a"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col">
+        <h4 class="text-lg font-bold uppercase text-white">Follow Us</h4>
+        <div class="flex flex-col gap-3">
+          <ul class="flex flex-row gap-2 pt-5 text-xl lg:pt-5 lg:pb-5">
+            <li class="flex h-2 w-4 items-center justify-center bg-black p-5 text-center text-white">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="flex h-1 w-3 items-center justify-center bg-black p-5 text-center text-white">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="flex h-1 w-3 items-center justify-center bg-black p-5 text-center text-white">
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li class="flex h-1 w-3 items-center justify-center bg-black p-5 text-center text-white">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li class="flex h-1 w-3 items-center justify-center bg-black p-5 text-center text-white">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+          <p>Copyright ©2002-2022 My Car Dealership</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
